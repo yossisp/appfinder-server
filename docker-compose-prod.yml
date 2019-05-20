@@ -1,0 +1,16 @@
+version: '3'
+services:
+  appstore-bl-server:
+    container_name: appstore-bl-server-production
+    build:
+      dockerfile: Dockerfile-prod
+      context: .
+    ports:
+      - "3000:3000"
+    networks:
+      - appstore-net
+    command: npm run start_in_docker
+
+networks:
+  appstore-net:
+    driver: bridge

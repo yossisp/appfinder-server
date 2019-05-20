@@ -1,0 +1,9 @@
+node_modules
+*.DS_Store*
+.idea*
+*.sqlite
+127.0.0.1
+seeders/
+.env
+.DS_Store
+CSV/
